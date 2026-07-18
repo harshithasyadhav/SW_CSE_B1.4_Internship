@@ -1,0 +1,141 @@
+/* Universal Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+:root {
+    --primary-color: #3f70a1;
+    --secondary-color: #3498db;
+    --background-color: #f4f4f4;
+    --text-color: #333333;
+    --white-color: #ffffff;
+    --font-family: Arial, sans-serif;
+    --border-radius: 8px;
+}
+
+/* Body */
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Header / Hero Section */
+header {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    margin-bottom: 15px;
+}
+
+header figure img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Navigation */
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+/* Sections */
+section {
+    background-color: var(--white-color);
+    margin: 20px;
+    padding: 20px;
+    border-radius: var(--border-radius);
+}
+
+/* ID Selector */
+#about {
+    border-left: 5px solid var(--secondary-color);
+}
+
+/* Descendant Selector */
+#learning ol li {
+    margin-left: 20px;
+    margin-bottom: 8px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+th {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Projects */
+article {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #cccccc;
+    border-radius: var(--border-radius);
+}
+
+/* Descendant Selector */
+article h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+/* Iframe */
+iframe {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+}
+
+/* Contact */
+#contact a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
