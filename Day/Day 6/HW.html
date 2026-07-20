@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property Layout</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            background-color:black;
+            padding:20px;
+        }
+
+        .demo-box{
+            margin-bottom:20px;
+        }
+
+        /* Top Orange Block */
+        .block-style{
+            display:block;
+            width:100%;
+            height:120px;
+            background-color:orange;
+        }
+
+        /* Blue Inline-Block Boxes */
+        .inline-block-style{
+            display:inline-block;
+            width:15%;
+            height:110px;
+            background-color:rgb(67,70,200);
+            margin-right:2%;
+            margin-bottom:20px;
+        }
+
+        .inline-block-style:last-child{
+            margin-right:0;
+        }
+
+        /* Green Boxes */
+        .green-box{
+            display:inline-block;
+            width:49%;
+            height:160px;
+            background-color:greenyellow;
+            margin-bottom:20px;
+        }
+
+        .left{
+            margin-right:1%;
+        }
+
+        /* Bottom Yellow Block */
+        .footer{
+            display:block;
+            width:100%;
+            height:45px;
+            background-color:gold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Orange Block -->
+    <div class="demo-box block-style"></div>
+
+    <!-- Blue Boxes -->
+    <div class="inline-block-style"></div>
+    <div class="inline-block-style"></div>
+    <div class="inline-block-style"></div>
+    <div class="inline-block-style"></div>
+    <div class="inline-block-style"></div>
+    <div class="inline-block-style"></div>
+
+    <!-- Green Boxes -->
+    <div class="green-box left"></div>
+    <div class="green-box"></div>
+
+    <!-- Yellow Footer -->
+    <div class="footer"></div>
+
+</body>
+</html>
