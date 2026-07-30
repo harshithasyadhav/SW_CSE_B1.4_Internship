@@ -4,7 +4,7 @@ import UserList from "./components/ListTwo";
 import ProductListDemo from "./components/ListThree";
 import CounterHook from "./components/HookOne";
 import UserListHook from "./components/HookTwo";
-
+import ThemeProviderDemo from "./components/HookThree";
 function App() {
   
   return (
@@ -14,7 +14,8 @@ function App() {
       <ProductListDemo />
 
       <CounterHook/> */}
-      <UserListHook/>
+      {/* <UserListHook/> */}
+      <ThemeProviderDemo />
     </>
   )
 }
